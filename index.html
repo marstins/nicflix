@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <title>Nicflix</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <h2 class="logo">Nicflix</h2>
+            <nav>
+                <a href="#good-movies">Good Movies</a>
+                <a href="#ok-movies">Ok Movies</a>
+                <a href="#bad-movies">Bad Movies</a>
+                <a href="#wicker-man">The Wicker Man</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div id="top" class="main-movie">
+            <div class="wrapper">
+                <h3 class="title">City of Angels</h3>
+                <p class="description">
+                    When guardian angel Seth -- who invisibly watches over the citizens of Los Angeles -- becomes captivated by Maggie.
+                </p>
+                <div class="buttons">
+                    <button role="button" class="button" onclick="play()">
+                        <i class="fas fa-play"></i>
+                        Watch Now
+                    </button>
+                    <button role="button" class="button" onclick="moreInfo()">
+                        <i class="fas fa-info-circle"></i>
+                        More Information
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="good-movies" class="carousel-movies">
+        <header class="movies-header">
+            <h3>Good Movies</h3>
+        </header>
+        <div class="owl-carousel owl-theme">
+            <div class="item box-movie">
+                <a href="#top" onclick="movieChanger(1)">
+                    <img src="img/minis/mini1.jpg"alt="city of angels thumbnail">
+                </a>
+            </div>
+            <div class="item box-movie">
+                <a href="#top" onclick="movieChanger(2)">
+                    <img src="img/minis/mini2.jpg"alt="the rock thumbnail">
+                </a>
+            </div>
+            <div class="item box-movie">
+                <a href="#top" onclick="movieChanger(3)">
+                    <img src="img/minis/mini3.jpg" alt="lord of war thumbnail">
+                </a>
+            </div>
+            <div class="item box-movie">
+                <a href="#top" onclick="movieChanger(4)">
+                    <img src="img/minis/mini4.jpg" alt="spider-man into the spider-verse thumbnail">
+                </a>
+            </div>
+            <div class="item box-movie">
+                <a href="#top" onclick="movieChanger(5)">
+                    <img src="img/minis/mini5.jpg" alt="kick-ass thumbnail">
+                </a>
+            </div>
+            <div class="item box-movie">
+                <a href="#top" onclick="movieChanger(6)">
+                    <img src="img/minis/mini6.jpg" alt="face off thumbnail">
+                </a>
+            </div>
+            <div class="item box-movie">
+                <a href="#top" onclick="movieChanger(7)">
+                    <img src="img/minis/mini7.jpg" alt="adaptation thumbnail">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="ok-movies" class="carousel-movies">
+        <header class="movies-header">
+            <h3>Ok Movies</h3>
+        </header>
+        <div class="owl-carousel owl-theme">
+            <div class="item box-movie">
+                <a href="#top" onclick="movieChanger(8)">
+                    <img src="img/minis/mini8.jpg"alt="the family man thumbnail">
+                </a>
+            </div>
+            <div class="item box-movie">
+                <a href="#top" onclick="movieChanger(9)">
+                    <img src="img/minis/mini9.jpg"alt="national treasure thumbnail">
+                </a>
+            </div>
+            <div class="item box-movie">
+                <a href="#top" onclick="movieChanger(10)">
+                    <img src="img/minis/mini10.jpg"alt="matchstick men thumbnail">
+                </a>
+            </div>
+            <div class="item box-movie">
+                <a href="#top" onclick="movieChanger(11)">
+                    <img src="img/minis/mini11.jpg"alt="teen titans go to the movies thumbnail">
+                </a>
+            </div>
+            <div class="item box-movie">
+                <a href="#top" onclick="movieChanger(12)">
+                    <img src="img/minis/mini12.jpg"alt="red rock west thumbnail">
+                </a>
+            </div>
+            <div class="item box-movie">
+                <a href="#top" onclick="movieChanger(13)">
+                    <img src="img/minis/mini13.jpg"alt="con air thumbnail">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="bad-movies" class="carousel-movies">
+        <header class="movies-header">
+            <h3>Bad Movies</h3>
+        </header>
+        <div class="owl-carousel owl-theme">
+            <div class="item box-movie">
+                <a href="#top" onclick="movieChanger(14)">
+                    <img src="img/minis/mini14.jpg" alt="left behind thumbnail">
+                </a>
+            </div>
+            <div class="item box-movie">
+                <a href="#top" onclick="movieChanger(15)">
+                    <img src="img/minis/mini15.jpg" alt="arsenal thumbnail">
+                </a>
+            </div>
+            <div class="item box-movie">
+                <a href="#top" onclick="movieChanger(16)">
+                    <img src="img/minis/mini16.jpg" alt="deadfall thumbnail">
+                </a>
+            </div>
+            <div class="item box-movie">
+                <a href="#top" onclick="movieChanger(17)">
+                    <img src="img/minis/mini17.jpg" alt="zandalee thumbnail">
+                </a>
+            </div>
+            <div class="item box-movie">
+                <a href="#top" onclick="movieChanger(18)">
+                    <img src="img/minis/mini18.jpg" alt="ghost rider thumbnail">
+                </a>
+            </div>
+            <div class="item box-movie">
+                <a href="#top" onclick="movieChanger(19)">
+                    <img src="img/minis/mini19.jpg" alt="211 thumbnail">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="wicker-man">
+        <header class="movies-header">
+            <h3>The Wicker Man</h3>
+        </header>
+        <div class="wicker-wrapper">
+            <div>
+                <a href="#top" onclick="movieChanger(20)">
+                    <img src="img/minis/mini20.jpg" alt="the wicker man thumbnail">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--script-->
+    <script src="https://kit.fontawesome.com/61a87f73e3.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/setup.js"></script>
+
+</body>
+</html>

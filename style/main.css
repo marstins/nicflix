@@ -1,0 +1,133 @@
+:root {
+    --red: #e50914;
+    --black: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Elements */
+
+body{
+    background: var(--black);
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .wrapper {
+    background: var(--black);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+header .logo {
+    color: var(--red);
+    font-family: "Arial Black", "Arial", Times;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+header nav a {
+    color: #aaa;
+    text-decoration: none;
+    transition: all .2s;
+}
+
+header nav a:hover {
+    color: white;
+}
+
+/* Main Movie */
+
+main {
+    margin-top: 40px;
+}
+
+.main-movie {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)100%), url("/img/covers/cover1.jpg");
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 10%;
+}
+
+.main-movie .wrapper {
+    width: 60%;
+    margin-left: 15px;
+}
+
+.main-movie .title {
+    font-size: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main-movie .description {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-movie .button {
+    background-color: rgba(0,0,0,.5);
+    border: none;
+    color: white;
+    padding: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.main-movie .button:hover {
+    background-color: white;
+    color: black;
+}
+
+.main-movie .button i {
+    margin-right: 5px;
+}
+
+/* Carousel */
+
+.movies-header {
+    font-size: 18px;
+    margin-left: 5px;
+    margin-top: 16px;
+    text-transform: uppercase;
+}
+
+.box-movie {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel-movies {
+    margin-top: 5px;
+}
+
+:target {
+    scroll-margin-top: 50px;
+}
+
+.wicker-wrapper img{
+    height: auto;
+    width: 100vw;
+}
+
+

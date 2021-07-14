@@ -1,0 +1,65 @@
+@media screen and (max-width:599px) {
+    header .wrapper {
+        flex-direction: column;
+        margin-bottom: 5px;
+    }
+
+    .button {
+        margin-bottom: 5px;
+        width: 200px;
+    }
+}
+
+@media screen and (min-width:600px) {
+    header .wrapper {
+        padding-left: 20px;
+    }
+
+    header nav {
+        width: 70%;
+        margin-right: 20px;
+        justify-content: space-evenly;
+    }
+
+    .main-movie {
+        margin-bottom: 30px;
+    }
+
+    .movies-header {
+        margin-bottom: 10px;
+    }
+
+    .wicker-wrapper img {
+        width: 32.5%
+    }
+}
+
+@media screen and (min-width:1000px) {
+    header .wrapper {
+        padding-left: 15px;
+    }
+
+    header nav {
+        width: 40%;
+        margin-right: 0;
+        justify-content: space-around;
+    }
+
+    .main-movie {
+        height: 45vh;
+    }
+    
+    .description {
+        width: 60%;
+    }
+
+    .wicker-wrapper {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .main-movie {
+        height: 100vh;
+    }
+}
