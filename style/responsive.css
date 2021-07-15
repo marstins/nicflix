@@ -62,4 +62,8 @@
     .main-movie {
         height: 100vh;
     }
+
+    .main-movie .title {
+        font-size: 60px;
+    }
 }
