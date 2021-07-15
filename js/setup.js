@@ -16,6 +16,38 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
+/**
+ * aqui no JS daria pra usar um objeto ao invés de um array pq assim vc não precisaria passar por todo o array toda vez que for atualizar o poster em destaque
+ * daria pra fazer algo assim:
+ */
+
+const moviesExample = {
+   'city-of-angels': {
+        title: "City of Angels",
+        description: "When guardian angel Seth -- who invisibly watches over the citizens of Los Angeles -- becomes captivated by Maggie.",
+        info: "https://www.themoviedb.org/movie/795-city-of-angels?language=en",
+        watch: "https://www.justwatch.com/us/movie/city-of-angels",
+        poster: "img/covers/cover1.jpg"
+   }
+}
+
+function movieChangerExample(movieKey) {
+
+    // aqui pegaria toda a informação do objeto pela chave dele
+    const movieData = moviesExample[movieKey]
+
+    document.querySelector(".main-movie").style.backgroundImage = 'url(' + movieData.poster + ')'
+
+    // ou poderia fazer assim:
+    // document.querySelector(".main-movie").style.backgroundImage = `url(${movieData.poster})`
+    // a única coisa que mudou foi o final, no JS essas crases `` são chamadas de lateral strings, nelas vc consegue mesclar strings e variáveis de um jeito mais simples, 
+    // tudo que vai dentro dela é um string a não ser que vc coloque isso: ${}
+    // tudo que vai dentro de é uma variável: ${variavelAqui}
+
+    document.querySelector(".title").innerHTML = movieData.title;
+    document.querySelector(".description").innerHTML = movieData.description;
+}
+
 const movies = [
     {
         id: 1,
