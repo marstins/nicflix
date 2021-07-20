@@ -29,10 +29,14 @@ header .wrapper {
 }
 
 header .logo {
-    color: var(--red);
     font-family: "Arial Black", "Arial", Times;
     font-size: 40px;
     text-transform: uppercase;
+}
+
+header .logo a {
+    text-decoration: none;
+    color: var(--red);
 }
 
 header nav {
@@ -40,6 +44,14 @@ header nav {
     display: flex;
     justify-content: space-around;
 }
+
+header ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
 header nav a {
     color: #aaa;
     text-decoration: none;
@@ -58,8 +70,9 @@ main {
 
 .main-movie {
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)100%), url("/img/covers/cover1.jpg");
-    height: 400px;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)100%), url("/img/covers/nic-cage.jpg");
+    background-position-x: -200px;
+    height: 500px;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -85,12 +98,14 @@ main {
 
 .main-movie .button {
     background-color: rgba(0,0,0,.5);
+    display: none;
     border: none;
     color: white;
     padding: 15px;
     margin-right: 15px;
     cursor: pointer;
     transition: all .2s;
+    text-decoration: none;
 }
 
 .main-movie .button:hover {
@@ -101,7 +116,6 @@ main {
 .main-movie .button i {
     margin-right: 5px;
 }
-
 /* Carousel */
 
 .movies-header {
@@ -122,7 +136,7 @@ main {
 }
 
 :target {
-    scroll-margin-top: 50px;
+    scroll-margin-top: 60px;
 }
 
 .wicker-wrapper img{
